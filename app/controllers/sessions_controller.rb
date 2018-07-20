@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
     if params[:name].nil? || params[:name]==''
       redirect_to root_path
     else
+      binding.pry
       session[:name] = params[:name]
     end
   end
