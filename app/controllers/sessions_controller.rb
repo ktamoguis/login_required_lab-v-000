@@ -12,6 +12,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    binding.pry
     if current_user
       session.delete :name
     end
