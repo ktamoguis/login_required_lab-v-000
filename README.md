@@ -1,6 +1,6 @@
 # Login Required Lab
 
-root GET  /                       sessions#new
+        root GET  /                       sessions#new
 secrets_show GET  /secrets/show(.:format) secrets#show
       login GET  /login(.:format)        sessions#new
             POST /login(.:format)        sessions#create
