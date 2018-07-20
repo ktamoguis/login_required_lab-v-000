@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
     if session[:name].nil?
     else
       session.delete :name
-      
+
     end
     redirect_to root_path
   end
