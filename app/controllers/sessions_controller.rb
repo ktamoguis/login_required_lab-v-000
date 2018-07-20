@@ -3,13 +3,13 @@ class SessionsController < ApplicationController
   end
 
   def create
-    binding.pry
+    #binding.pry
     if params[:name].nil? || params[:name]==''
       redirect_to root_path
     else
-      binding.pry
+      #binding.pry
       session[:name] = params[:name]
-      binding.pry
+      #binding.pry
       redirect_to secrets_show_path
     end
   end
