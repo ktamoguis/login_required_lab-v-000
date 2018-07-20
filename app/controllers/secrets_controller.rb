@@ -1,10 +1,10 @@
 class SecretsController < ApplicationController
 
   def show
-    binding.pry
+    #binding.pry
     if !session.empty?
     else
-      binding.pry
+      #binding.pry
       redirect_to root_path
     end
   end
