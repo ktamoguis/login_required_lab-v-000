@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       binding.pry
       session[:name] = params[:name]
       binding.pry
-      redirect_to 
+      redirect_to secrets_show_path
     end
   end
 
