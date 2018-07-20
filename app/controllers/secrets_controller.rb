@@ -5,7 +5,7 @@ class SecretsController < ApplicationController
     if !session.empty?
     else
       binding.pry
-      redirect_to login_path
+      redirect_to root
     end
   end
 
