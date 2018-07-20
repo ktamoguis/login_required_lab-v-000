@@ -1,6 +1,7 @@
 class SecretsController < ApplicationController
 
   def show
+    binding.pry
     if session{}
     else
       binding.pry
