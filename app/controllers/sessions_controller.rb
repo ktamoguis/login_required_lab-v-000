@@ -17,6 +17,7 @@ class SessionsController < ApplicationController
   def destroy
     binding.pry
     if session[:name].nil?
+      redirect_to root_path
     else
       session.delete :name
     end
